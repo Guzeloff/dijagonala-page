@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Дијагонала | Почетна</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="All about meta tags and how to add them to your website."
+    />
+    <meta
+      name="keywords"
+      content="meta tags, meta description, meta keywords, SEO, search engine optimization"
+    />
+    <link rel="shortcut icon" href="./assets/favico.ico" type="image/x-icon" />
+    <link href="./css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css " />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <section class="main-page">
+      <div class="banner">
+        <div class="header-info">
+          <div class="col1">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+              <a href="tel:+38971320933">071 320 933</a>
+            </span>
+          </div>
+          <div class="col2-social">
+            <a
+              href="https://www.facebook.com/dijagonala"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/dijagonala.sr/?hl=en"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <header class="page-header">
+          <div class="page-header__top">
+            <div class="page-header__logo">
+              <img src="assets/logo.png" alt="dijagonala brand" />
+            </div>
+            <div class="page-header__toggle" onclick="toggleMenu()">☰</div>
+          </div>
+          <nav class="page-header__bottom">
+            <ul id="navigation" class="navigation">
+              <li class="navigation__item">Дома</li>
+              <li class="navigation__item">Галерија</li>
+              <li class="navigation__item">За Нас</li>
+              <li class="navigation__item">Услуги</li>
+              <li class="navigation__item">Контакт</li>
+            </ul>
+          </nav>
+        </header>
+        <div class="banner__title">
+          <h1>Сѐ од <span
+            class="txt-rotate"
+            data-period="500"
+            data-rotate='[ "Санитарија...", "Плочки...", "Мебел..." ]'></span></h1>
+          <a href="#">Дознај повеќе </a>
+        </div>
+      </div>
+      <section class="aboutus">
+        <div class="aboutus__img">
+          <img
+            src="./assets/aboutusimg.png"
+            alt="dijagonala se od sanitarija"
+          />
+          <div class="aboutus__desc">
+            <p>повеќе од 10год <span>искуство</span></p>
+            <p>Се грижиме бањите да изгледаат елеганто од 1995</p>
+            <div class="aboutus__btn">
+              <a href="#">Контакт</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video-section" id="about">
+        <div class="video-banner">
+          <video id="bgvid" playsinline autoplay muted loop>
+            <source src="./assets/dijagonala-cut.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="brand-info">
+          <p>Кратка прошетка низ нашиот досегашен <span>Успех</span></p>
+        </div>
+      </section>
+      <section class="our__products">
+        <div class="our__products__wrapper">
+          <div class="our_product">
+            <img src="./assets/icons/icon1.png" alt="" />
+            <p>КАДИ</p>
+            <p>
+              Кади од водечки санитарни производители, со удобно задоволство при
+              капење
+            </p>
+          </div>
+          <div class="our_product">
+            <img src="./assets/icons/icon2.png" alt="" />
+            <p>ТУШ КАБИНИ</p>
+            <p>
+              Висококвалитетни туш кабини, кој ќи исполнуваат вашите соништа за
+              прекрасна бања
+            </p>
+          </div>
+          <div class="our_product">
+            <img src="./assets/icons/icon3.png" alt="" />
+            <p>САНИТАРИЈА</p>
+            <p>
+              Модерни мијалници, WC школки, писоари со различни форми за секоја
+              желба и потреба
+            </p>
+          </div>
+          <div class="our_product">
+            <img src="./assets/icons/icon4.png" alt="" />
+            <p>МЕБЕЛ ЗА КУПАТИЛА</p>
+            <p>опремување на вашата бања, удобно со прекрасна атмосфера</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <p>Галерија</p>
+        <div class="tab-wrap">
+          <!-- active tab on page load gets checked attribute -->
+          <input type="radio" id="tab1" name="tabGroup1" class="tab" checked />
+          <label for="tab1">САНИТАРИЈА</label>
+
+          <input type="radio" id="tab2" name="tabGroup1" class="tab" />
+          <label for="tab2">МЕБЕЛ</label>
+
+          <input type="radio" id="tab3" name="tabGroup1" class="tab" />
+          <label for="tab3">ИДЕИ</label>
+
+          <div class="tab__content">
+            <div
+              style="
+                --swiper-navigation-color: #ed1c24;
+                --swiper-pagination-color: #ed1c24;
+              "
+              class="swiper mySwiper2"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    data-lightbox="sanitarija"
+                  >
+                    <img
+                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    data-lightbox="sanitarija"
+                  >
+                    <img
+                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    data-lightbox="sanitarija"
+                  >
+                    <img
+                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    data-lightbox="sanitarija"
+                  >
+                    <img
+                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper thumb">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab__content">
+            <div
+              style="
+                --swiper-navigation-color: #ed1c24;
+                --swiper-pagination-color: #ed1c24;
+              "
+              class="swiper mySwiper3"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    data-lightbox="mebel"
+                  >
+                    <img
+                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    data-lightbox="mebel"
+                  >
+                    <img
+                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    data-lightbox="mebel"
+                  >
+                    <img
+                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    data-lightbox="mebel"
+                  >
+                    <img
+                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper33 thumb">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab__content">
+            <div
+              style="
+                --swiper-navigation-color: #ed1c24;
+                --swiper-pagination-color: #ed1c24;
+              "
+              class="swiper mySwiper1"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper11 thumb">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-form">
+        <p class="title">Контакт</p>
+        <div class="contact-form__wrapper">
+          <div class="contact-form__wrapper-con">
+            <form action="https://formspree.io/f/{form_id}" method="post">
+              <div>
+                <label for="name">Име Презиме</label>
+                <input name="name" id="name" type="text" required />
+              </div>
+              <div>
+                <label for="phone">Тел.број</label>
+                <input name="phone" id="phone" type="number" required />
+              </div>
+              <div>
+                <label for="message">Вашата порака:</label>
+                <textarea id="message" name="message" rows="3"></textarea>
+              </div>
+              <button type="submit">Испрати</button>
+            </form>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23928.052430122876!2d22.62722242620771!3d41.43907944470929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a9fe5e24cae5e9%3A0x9faa6ec85a826a82!2sDijagonala!5e0!3m2!1sen!2smk!4v1650023580444!5m2!1sen!2smk"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+            </div>
+          </div>
+          <div class="footer__container">
+            <div class="footer__logo">
+              <div class="footer__logo__img">
+                <img
+                  src="./assets/logo.png"
+                  alt="dijagonala strumica se od sanitarija"
+                />
+              </div>
+            </div>
+            <div class="footer__info">
+              <div class="footer__logo__social">
+                <a
+                  href="https://www.facebook.com/dijagonala"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/dijagonala.sr/?hl=en"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <div class="footer__phone">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                    <a href="tel:+38971320933">071 320 933</a>
+                  </span>
+                </div>
+                <div class="footer__mail">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    <a href="mailto:dijagonala@yahoo.com">dijagonala@yahoo.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <p>© 
+              <script>
+              document.write(new Date().getFullYear());
+            </script>
+            <span>Дијагонала - Струмица</span> сите права се задржани.</p>
+            <p>Powered by <a href="https://hidigitalworld.com/" target="_blank">HiDigital</a></p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/lightbox.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      //swiper 1
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+
+      // swiper 2
+      var swiper3 = new Swiper(".mySwiper33", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper33 = new Swiper(".mySwiper3", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper3,
+        },
+      });
+
+      // swiper 1
+      var swiper1 = new Swiper(".mySwiper11", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper11 = new Swiper(".mySwiper1", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper1,
+        },
+      });
+    </script>
+    <script>
+      lightbox.option({
+        disableScrolling: true,
+      });
+    </script>
+  </body>
+</html>
