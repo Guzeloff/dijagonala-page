@@ -71,66 +71,78 @@
           </div>
           <nav class="page-header__bottom">
             <ul id="navigation" class="navigation">
-              <li class="navigation__item">Дома</li>
-              <li class="navigation__item">Галерија</li>
-              <li class="navigation__item">За Нас</li>
-              <li class="navigation__item">Услуги</li>
-              <li class="navigation__item">Контакт</li>
+              <li class="navigation__item"><a href="/">Дома</a></li>
+              <li class="navigation__item"><a href="#gallery">Галерија</a></li>
+              <li class="navigation__item"><a href="#about">За Нас</a></li>
+              <li class="navigation__item"><a href="#products">Производи</a></li>
+              <li class="navigation__item"><a href="#contact">Контакт</a></li>
             </ul>
           </nav>
         </header>
         <div class="banner__title">
           <h1>Сѐ од <span
             class="txt-rotate"
-            data-period="500"
+            data-period="2000"
             data-rotate='[ "Санитарија...", "Плочки...", "Мебел..." ]'></span></h1>
-          <a href="#">Дознај повеќе </a>
+          <a href="#products">Дознај повеќе </a>
         </div>
       </div>
       <section class="aboutus">
         <div class="aboutus__img">
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>За Нас</h2>
+              <p>Компанијата Дијагонала е регистрирана 2004 година со основна дејност продажба на плочки и санитарија. Со самото тоа почнува и приказната за Дијагонала каде во 2005 година го отвара својот изложбен салон од 300m2 и магацински простор од 2000 m2. Со зголемување на обемот и целокупниот асортиман во 2008 година Дијагонала отвара и втор продажно изложбен салон.</p>
+              <p>Успешноста во работењето и задоволување на потребите на купувачите низ годините се наша примарна цел а самото тоа и наша обврска и задача. Така компанијата во мај 2016 година го отвара својот најголем продажно изложбен салон во Југоисточна Македонија на површина од 1.500 m2    и магацински простор од    и го проширува својот асортиман со ЛАМИНАТНИ ПОДОВИ, SPC подови, медијапански проfили, сопствена изработка на масивни скалници и плотни, оборување и обработка на плочки.</p>
+              <p>Парарелно со отварање на новиот салон се зголемува и магацински простор над 3000 м2.      Денес Компанијата Дијагонала преку својата мисија за задоволување на потребите на купувачите е во постојан раст и констатно следење новитети и исполување желби на купувачите.</p>
+            </div>
+          
+          </div>
           <img
             src="./assets/aboutusimg.png"
             alt="dijagonala se od sanitarija"
           />
           <div class="aboutus__desc">
             <p>повеќе од 10год <span>искуство</span></p>
-            <p>Се грижиме бањите да изгледаат елеганто од 1995</p>
+            <p>Се грижиме бањите да изгледаат елеганто од 2005</p>
             <div class="aboutus__btn">
-              <a href="#">Контакт</a>
+              <button id="myBtn">Дознај повеќе</button>
             </div>
           </div>
         </div>
       </section>
-      <section class="video-section" id="about">
+      <section class="video-section" >
         <div class="video-banner">
           <video id="bgvid" playsinline autoplay muted loop>
             <source src="./assets/dijagonala-cut.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="brand-info">
-          <p>Кратка прошетка низ нашиот досегашен <span>Успех</span></p>
+          <p id="about">Кратка прошетка низ нашиот досегашен <span>Успех</span></p>
         </div>
       </section>
       <section class="our__products">
         <div class="our__products__wrapper">
-          <div class="our_product">
+          <!-- <div class="our_product" id="products">
             <img src="./assets/icons/icon1.png" alt="" />
             <p>КАДИ</p>
             <p>
               Кади од водечки санитарни производители, со удобно задоволство при
               капење
             </p>
-          </div>
-          <div class="our_product">
+          </div> -->
+          <!-- <div class="our_product">
             <img src="./assets/icons/icon2.png" alt="" />
             <p>ТУШ КАБИНИ</p>
             <p>
               Висококвалитетни туш кабини, кој ќи исполнуваат вашите соништа за
               прекрасна бања
             </p>
-          </div>
-          <div class="our_product">
+          </div> -->
+          <div class="our_product" id="products">
             <img src="./assets/icons/icon3.png" alt="" />
             <p>САНИТАРИЈА</p>
             <p>
@@ -140,26 +152,48 @@
           </div>
           <div class="our_product">
             <img src="./assets/icons/icon4.png" alt="" />
-            <p>МЕБЕЛ ЗА КУПАТИЛА</p>
+            <p>МЕБЕЛ ЗА БАЊИ</p>
             <p>опремување на вашата бања, удобно со прекрасна атмосфера</p>
+          </div>
+          <div class="our_product">
+            <img src="./assets/icons/mirror.png" alt="" />
+            <p>ОГЛЕДАЛА НА ДОПИР</p>
+            <p>
+              Модерни ЛЕД огледала на допир кој ќе се вклопи одлично во вашата бања
+            </p>
+          </div>
+          <div class="our_product">
+            <img src="./assets/icons/floor.png" alt="" />
+            <p>SPC ПОДОВИ</p>
+            <p>
+              Под на иднината,високо квалитетни подови, лесни за поставување
+            </p>
+          </div>
+          <div class="our_product">
+            <img src="./assets/icons/lam-floor.png" alt="" />
+            <p>ЛАМИНАТНИ ПОДОВИ</p>
+            <p>
+              100% идентичен изглед на дрво,камен или плочка, со одличен квалитет од светски брендови
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="gallery">
-        <p>Галерија</p>
+      <section class="gallery-wrapper">
+        <div class="gallery">
+        <p id="gallery">Галерија</p>
         <div class="tab-wrap">
           <!-- active tab on page load gets checked attribute -->
-          <input type="radio" id="tab1" name="tabGroup1" class="tab" checked />
-          <label for="tab1">САНИТАРИЈА</label>
+          <!-- <input type="radio" id="tab1" name="tabGroup1" class="tab" checked />
+          <label for="tab1">САНИТАРИЈА</label> -->
 
-          <input type="radio" id="tab2" name="tabGroup1" class="tab" />
-          <label for="tab2">МЕБЕЛ</label>
+          <!-- <input type="radio" id="tab2" name="tabGroup1" class="tab" />
+          <label for="tab2">МЕБЕЛ</label> -->
 
-          <input type="radio" id="tab3" name="tabGroup1" class="tab" />
-          <label for="tab3">ИДЕИ</label>
+          <input type="radio" id="tab3" name="tabGroup1" class="tab" checked />
+          <label for="tab3">АМБИЕНТИ</label>
 
-          <div class="tab__content">
+          <!-- <div class="tab__content">
             <div
               style="
                 --swiper-navigation-color: #ed1c24;
@@ -236,9 +270,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="tab__content">
+          <!-- <div class="tab__content">
             <div
               style="
                 --swiper-navigation-color: #ed1c24;
@@ -315,54 +349,145 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="tab__content">
             <div
               style="
                 --swiper-navigation-color: #ed1c24;
                 --swiper-pagination-color: #ed1c24;
+                max-height: 664px;
               "
               class="swiper mySwiper1"
             >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <a
-                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    href="assets/gallery/ambienti-1.jpg"
                     data-lightbox="idei"
                   >
                     <img
-                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                      src="assets/gallery/ambienti-1.jpg"
                     />
                   </a>
                 </div>
                 <div class="swiper-slide">
                   <a
-                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    href="assets/gallery/ambienti-2.jpg"
                     data-lightbox="idei"
                   >
                     <img
-                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                      src="assets/gallery/ambienti-2.jpg"
                     />
                   </a>
                 </div>
                 <div class="swiper-slide">
                   <a
-                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    href="assets/gallery/ambienti-3.jpg"
                     data-lightbox="idei"
                   >
                     <img
-                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                      src="assets/gallery/ambienti-3.jpg"
                     />
                   </a>
                 </div>
                 <div class="swiper-slide">
                   <a
-                    href="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    href="assets/gallery/ambienti-4.jpg"
                     data-lightbox="idei"
                   >
                     <img
-                      src="assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                      src="assets/gallery/ambienti-4.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/ambienti-5.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/ambienti-5.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/ambienti-6.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/ambienti-6.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/ambienti-7.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/ambienti-7.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/ambienti-8.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/ambienti-8.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/ambienti-9.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/ambienti-9.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/ambienti-10.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/ambienti-10.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/ambienti-11.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/ambienti-11.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/ambienti-12.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/ambienti-12.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="assets/gallery/ambienti-13.jpg"
+                    data-lightbox="idei"
+                  >
+                    <img
+                      src="assets/gallery/ambienti-13.jpg"
                     />
                   </a>
                 </div>
@@ -374,31 +499,77 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
-                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    src="assets/gallery/ambienti-1.jpg"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    src="assets/gallery/ambienti-2.jpg"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    src="assets/gallery/ambienti-3.jpg"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="./assets/gallery/modern-bathroom-interior-design-blue-dark-color-wall-3d-rendering_41470-3472.jpg"
+                    src="assets/gallery/ambienti-4.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/gallery/ambienti-5.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/gallery/ambienti-6.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/gallery/ambienti-7.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/gallery/ambienti-8.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/gallery/ambienti-9.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/gallery/ambienti-10.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/gallery/ambienti-11.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/gallery/ambienti-12.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/gallery/ambienti-13.jpg"
                   />
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
       </section>
       <section class="contact-form">
-        <p class="title">Контакт</p>
+        <p class="title" id="contact">Контакт</p>
         <div class="contact-form__wrapper">
           <div class="contact-form__wrapper-con">
             <form action="https://formspree.io/f/{form_id}" method="post">
